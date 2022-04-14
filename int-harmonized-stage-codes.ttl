@@ -1,0 +1,961 @@
+@prefix nen: <http://data.nen.nl/> .
+@prefix iso: <http://data.nen.nl/isc/iso/stage/> .
+@prefix substage: <http://data.nen.nl/isc/iso/substage/> .
+@prefix iec: <http://data.nen.nl/isc/iec/code/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nen:StageCodeConcept a rdfs:Class ;
+    rdfs:label "Stage codes"@en,
+        "Stadium codes"@nl ;
+    rdfs:subClassOf skos:Concept .
+
+nen:StageConcept a rdfs:Class ;
+    rdfs:label "Stages"@en,
+        "Stadia"@nl ;
+    rdfs:subClassOf skos:Concept .
+
+nen:SubstageConcept a rdfs:Class ;
+    rdfs:label "Substages"@en,
+        "Substadia"@nl ;
+    rdfs:subClassOf skos:Concept .
+
+### CONCEPTS ###
+
+
+### ISO STAGE CODES ###
+iso:00.98 a nen:StageCodeConcept,
+        skos:Concept ;
+    skos:broader iso:00 ;
+    skos:definition "Proposal for new project abandoned" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:notation "00.98" ;
+    skos:prefLabel "Proposal for new project abandoned"@en .
+
+iso:00.99 a nen:StageCodeConcept ;
+    skos:broader iso:00 ;
+    skos:definition "Approval to ballot proposal for new project" ;
+    skos:notation "00.99" ;
+    skos:prefLabel "Approval to ballot proposal for new project"@en .
+
+iso:90.60 a nen:StageCodeConcept ;
+    skos:broader iso:90 ;
+    skos:definition "Close of review" ;
+    skos:notation "90.60" ;
+    skos:prefLabel "Close of review"@en .
+
+iso:95.20 a nen:StageCodeConcept ;
+    skos:broader iso:95 ;
+    skos:definition "Withdrawal ballot initiated" ;
+    skos:notation "95.20" ;
+    skos:prefLabel "Withdrawal ballot initiated"@en .
+
+iso:95.60 a nen:StageCodeConcept ;
+    skos:broader iso:95 ;
+    skos:definition "Close of voting" ;
+    skos:notation "95.60" ;
+    skos:prefLabel "Close of voting"@en .
+
+iso:00.00 a nen:StageCodeConcept,
+        skos:Concept ;
+    skos:broader iso:00 ;
+    skos:definition "Proposal for new project received" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:notation "00.00" ;
+    skos:prefLabel "Proposal for new project received"@en .
+
+iso:00.20 a nen:StageCodeConcept,
+        skos:Concept ;
+    skos:broader iso:00 ;
+    skos:definition "Proposal for new project under review" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:notation "00.20" ;
+    skos:prefLabel "Proposal for new project under review"@en .
+
+iso:00.60 a nen:StageCodeConcept,
+        skos:Concept ;
+    skos:broader iso:00 ;
+    skos:definition "Close of review" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:notation "00.60" ;
+    skos:prefLabel "Close of review" .
+
+iso:10.00 a nen:StageCodeConcept ;
+    skos:broader iso:10 ;
+    skos:definition "Proposal for new project registered" ;
+    skos:notation "10.00" ;
+    skos:prefLabel "Proposal for new project registered"@en .
+
+iso:10.20 a nen:StageCodeConcept ;
+    skos:broader iso:10 ;
+    skos:definition "Proposal for new project under review" ;
+    skos:notation "10.20" ;
+    skos:prefLabel "Proposal for new project under review"@en .
+
+iso:10.60 a nen:StageCodeConcept ;
+    skos:broader iso:10 ;
+    skos:definition "New project ballot initiated" ;
+    skos:notation "10.60" ;
+    skos:prefLabel "New project ballot initiated"@en .
+
+iso:10.92 a nen:StageCodeConcept ;
+    skos:broader iso:10 ;
+    skos:definition "Close of voting" ;
+    skos:notation "10.92" ;
+    skos:prefLabel "Close of voting"@en .
+
+iso:10.98 a nen:StageCodeConcept ;
+    skos:broader iso:10 ;
+    skos:definition "New project rejected" ;
+    skos:notation "10.98" ;
+    skos:prefLabel "New project rejected"@en .
+
+iso:10.99 a nen:StageCodeConcept ;
+    skos:broader iso:10 ;
+    skos:definition "New project approved" ;
+    skos:notation "10.99" ;
+    skos:prefLabel "New project approved"@en .
+
+iso:20.00 a nen:StageCodeConcept ;
+    skos:broader iso:20 ;
+    skos:definition "New project registered in TC/SC work programme" ;
+    skos:notation "20.00" ;
+    skos:prefLabel "New project registered in TC/SC work programme"@en .
+
+iso:20.20 a nen:StageCodeConcept ;
+    skos:broader iso:20 ;
+    skos:definition "WD approved for registration as CD" ;
+    skos:notation "20.20" ;
+    skos:prefLabel "WD approved for registration as CD"@en .
+
+iso:20.60 a nen:StageCodeConcept ;
+    skos:broader iso:20 ;
+    skos:definition "Close of comment period" ;
+    skos:notation "20.60" ;
+    skos:prefLabel "Close of comment period"@en .
+
+iso:20.98 a nen:StageCodeConcept ;
+    skos:broader iso:20 ;
+    skos:definition "Project deleted" ;
+    skos:notation "20.98" ;
+    skos:prefLabel "Project deleted"@en .
+
+iso:20.99 a nen:StageCodeConcept ;
+    skos:broader iso:20 ;
+    skos:definition "WD approved for registration as CD" ;
+    skos:notation "20.99" ;
+    skos:prefLabel "WD approved for registration as CD"@en .
+
+iso:30.00 a nen:StageCodeConcept ;
+    skos:broader iso:30 ;
+    skos:definition "Committee draft (CD) registered" ;
+    skos:notation "30.00" ;
+    skos:prefLabel "Committee draft (CD) registered"@en .
+
+iso:30.20 a nen:StageCodeConcept ;
+    skos:broader iso:30 ;
+    skos:definition "CD study/ballot initiated" ;
+    skos:notation "30.20" ;
+    skos:prefLabel "CD study/ballot initiated"@en .
+
+iso:30.60 a nen:StageCodeConcept ;
+    skos:broader iso:30 ;
+    skos:definition "Close of voting/ comment period" ;
+    skos:notation "30.60" ;
+    skos:prefLabel "Close of voting/ comment period"@en .
+
+iso:30.92 a nen:StageCodeConcept ;
+    skos:broader iso:30 ;
+    skos:definition "CD referred back to Working Group" ;
+    skos:notation "30.92" ;
+    skos:prefLabel "CD referred back to Working Group"@en .
+
+iso:30.98 a nen:StageCodeConcept ;
+    skos:broader iso:30 ;
+    skos:definition "Project deleted" ;
+    skos:notation "30.98" ;
+    skos:prefLabel "Project deleted"@en .
+
+iso:30.99 a nen:StageCodeConcept ;
+    skos:broader iso:30 ;
+    skos:definition "CD approved for registration as DIS" ;
+    skos:notation "30.99" ;
+    skos:prefLabel "CD approved for registration as DIS"@en .
+
+iso:40.00 a nen:StageCodeConcept ;
+    skos:broader iso:40 ;
+    skos:definition "DIS registered" ;
+    skos:notation "40.00" ;
+    skos:prefLabel "DIS registered"@en .
+
+iso:40.20 a nen:StageCodeConcept ;
+    skos:broader iso:40 ;
+    skos:definition "DIS ballot initiated: 12 weeks" ;
+    skos:notation "40.20" ;
+    skos:prefLabel "DIS ballot initiated: 12 weeks"@en .
+
+iso:40.60 a nen:StageCodeConcept ;
+    skos:broader iso:40 ;
+    skos:definition "Close of voting" ;
+    skos:notation "40.60" ;
+    skos:prefLabel "Close of voting"@en .
+
+iso:40.92 a nen:StageCodeConcept ;
+    skos:broader iso:40 ;
+    skos:definition "Full report circulated: DIS referred back to TC or SC" ;
+    skos:notation "40.92" ;
+    skos:prefLabel "Full report circulated: DIS referred back to TC or SC"@en .
+
+iso:40.93 a nen:StageCodeConcept ;
+    skos:broader iso:40 ;
+    skos:definition "Full report circulated: decision for new DIS ballot" ;
+    skos:notation "40.93" ;
+    skos:prefLabel "Full report circulated: decision for new DIS ballot"@en .
+
+iso:40.98 a nen:StageCodeConcept ;
+    skos:broader iso:40 ;
+    skos:definition "Project deleted" ;
+    skos:notation "40.98" ;
+    skos:prefLabel "Project deleted"@en .
+
+iso:40.99 a nen:StageCodeConcept ;
+    skos:broader iso:40 ;
+    skos:definition "Full report circulated: DIS approved for registration as FDIS" ;
+    skos:notation "40.99" ;
+    skos:prefLabel "Full report circulated: DIS approved for registration as FDIS"@en .
+
+iso:50.00 a nen:StageCodeConcept ;
+    skos:broader iso:50 ;
+    skos:definition "Final text received or FDIS registered for formal approval" ;
+    skos:notation "50.00" ;
+    skos:prefLabel "Final text received or FDIS registered for formal approval"@en .
+
+iso:50.20 a nen:StageCodeConcept ;
+    skos:broader iso:50 ;
+    skos:definition "Proof sent to secretariat or FDIS ballot initiated: 8 weeks" ;
+    skos:notation "50.20" ;
+    skos:prefLabel "Proof sent to secretariat or FDIS ballot initiated: 8 weeks"@en .
+
+iso:50.60 a nen:StageCodeConcept ;
+    skos:broader iso:50 ;
+    skos:definition "Close of voting. Proof returned by secretariat" ;
+    skos:notation "50.60" ;
+    skos:prefLabel "Close of voting. Proof returned by secretariat"@en .
+
+iso:50.92 a nen:StageCodeConcept ;
+    skos:broader iso:50 ;
+    skos:definition "FDIS or proof referred back to TC or SC" ;
+    skos:notation "50.92" ;
+    skos:prefLabel "FDIS or proof referred back to TC or SC"@en .
+
+iso:50.98 a nen:StageCodeConcept ;
+    skos:broader iso:50 ;
+    skos:definition "Project deleted" ;
+    skos:notation "50.98" ;
+    skos:prefLabel "Project deleted"@en .
+
+iso:50.99 a nen:StageCodeConcept ;
+    skos:broader iso:50 ;
+    skos:definition "FDIS or proof approved for publication" ;
+    skos:notation "50.99" ;
+    skos:prefLabel "FDIS or proof approved for publication"@en .
+
+iso:60.00 a nen:StageCodeConcept ;
+    skos:broader iso:60 ;
+    skos:definition "International Standard under publication" ;
+    skos:notation "60.00" ;
+    skos:prefLabel "International Standard under publication"@en .
+
+iso:60.60 a nen:StageCodeConcept ;
+    skos:broader iso:60 ;
+    skos:definition "International Standard published" ;
+    skos:notation "60.60" ;
+    skos:prefLabel "International Standard published"@en .
+
+iso:90.20 a nen:StageCodeConcept ;
+    skos:broader iso:90 ;
+    skos:definition "International Standard under systematic review" ;
+    skos:notation "90.20" ;
+    skos:prefLabel "International Standard under systematic review"@en .
+
+iso:90.92 a nen:StageCodeConcept ;
+    skos:broader iso:90 ;
+    skos:definition "International Standard to be revised" ;
+    skos:notation "90.92" ;
+    skos:prefLabel "International Standard to be revised"@en .
+
+iso:90.93 a nen:StageCodeConcept ;
+    skos:broader iso:90 ;
+    skos:definition "International Standard confirmed" ;
+    skos:notation "90.93" ;
+    skos:prefLabel "International Standard confirmed"@en .
+
+iso:95.92 a nen:StageCodeConcept ;
+    skos:broader iso:95 ;
+    skos:definition "Decision not to withdraw International Standard" ;
+    skos:notation "95.92" ;
+    skos:prefLabel "Decision not to withdraw International Standard"@en .
+
+iso:95.99 a nen:StageCodeConcept ;
+    skos:broader iso:95 ;
+    skos:definition "Withdrawal of International Standard" ;
+    skos:notation "95.99" ;
+    skos:prefLabel "Withdrawal of International Standard"@en .
+
+iso:90.99 a nen:StageCodeConcept ;
+    skos:broader iso:90,
+        iso:95 ;
+    skos:definition "Withdrawal of International Standard proposed by TC or SC" ;
+    skos:notation "90.99" ;
+    skos:prefLabel "Withdrawal of International Standard proposed by TC or SC"@en .
+
+iso:00 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:definition "Preliminary" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:00.00,
+        iso:00.20,
+        iso:00.60,
+        iso:00.98,
+        iso:00.99 ;
+    skos:notation "00" ;
+    skos:prefLabel "Preliminary"@en ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+
+iso:10 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:definition "Proposal" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:10.00,
+        iso:10.20,
+        iso:10.60,
+        iso:10.92,
+        iso:10.98,
+        iso:10.99 ;
+    skos:notation "10" ;
+    skos:prefLabel "Proposal"@en,
+        "Voorstel"@nl ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+
+iso:20 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:definition "Prepatory" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:20.00,
+        iso:20.20,
+        iso:20.60,
+        iso:20.98,
+        iso:20.99 ;
+    skos:notation "20" ;
+    skos:prefLabel "Prepatory"@en,
+        "Voorbereiding"@nl ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+
+iso:30 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:definition "Committee" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:30.00,
+        iso:30.20,
+        iso:30.60,
+        iso:30.92,
+        iso:30.98,
+        iso:30.99 ;
+    skos:notation "30" ;
+    skos:prefLabel "Committee"@en,
+        "Commissie"@nl ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+
+iso:40 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:definition "Enquiry" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:40.00,
+        iso:40.20,
+        iso:40.60,
+        iso:40.92,
+        iso:40.93,
+        iso:40.98,
+        iso:40.99 ;
+    skos:notation "40" ;
+    skos:prefLabel "Enquiry"@en,
+        "Navraag"@nl ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+		
+iso:50 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:50.00,
+        iso:50.20,
+        iso:50.60,
+        iso:50.92,
+        iso:50.98,
+        iso:50.99 ;
+    skos:notation "50" ;
+    skos:prefLabel "Approval"@en,
+        "Goedkeuring"@nl ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+
+iso:60 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:definition "Publication" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:60.00,
+        iso:60.60 ;
+    skos:notation "60" ;
+    skos:prefLabel "Publication"@en,
+        "Publicatie"@nl ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+		
+iso:90 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:definition "Review" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:90.20,
+        iso:90.60,
+        iso:90.92,
+        iso:90.93,
+        iso:90.99 ;
+    skos:notation "90" ;
+    skos:prefLabel "Review"@en,
+        "Beoordeling"@nl ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+
+iso:95 a nen:StageConcept,
+        skos:Concept ;
+    skos:broader nen:stage ;
+    skos:definition "Withdrawal" ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iso> ;
+    skos:narrower iso:90.99,
+        iso:95.20,
+        iso:95.60,
+        iso:95.92,
+        iso:95.99 ;
+    skos:notation "95" ;
+    skos:prefLabel "Withdrawal"@en,
+        "Terugtrekking"@nl ;
+    skos:topConceptOf <http://data.nen.nl/isc/schemes/iso> .
+		
+### COLLECTIONS ###
+iso:all a skos:Collection ;
+    skos:member iso:00.00,
+        iso:00.20,
+        iso:00.60,
+        iso:00.98,
+        iso:00.99,
+        iso:10.00,
+        iso:10.20,
+        iso:10.60,
+        iso:10.92,
+        iso:10.98,
+        iso:10.99,
+        iso:20.00,
+        iso:20.20,
+        iso:20.60,
+        iso:20.98,
+        iso:20.99,
+        iso:30.00,
+        iso:30.20,
+        iso:30.60,
+        iso:30.92,
+        iso:30.98,
+        iso:30.99,
+        iso:40.00,
+        iso:40.20,
+        iso:40.60,
+        iso:40.92,
+        iso:40.93,
+        iso:40.98,
+        iso:40.99,
+        iso:50.00,
+        iso:50.20,
+        iso:50.60,
+        iso:50.92,
+        iso:50.98,
+        iso:50.99,
+        iso:60.00,
+        iso:60.60,
+        iso:90.20,
+        iso:90.60,
+        iso:90.92,
+        iso:90.93,
+        iso:90.99,
+        iso:95.20,
+        iso:95.60,
+        iso:95.92,
+        iso:95.99 ;
+    skos:prefLabel "Stage codes"@en,
+		"Stage codes"@nl.
+
+substage:all a skos:Collection ;
+    skos:altLabel "Subphases"@en,
+        "Subfases"@nl ;
+    skos:member substage:00,
+        substage:20,
+        substage:60,
+        substage:90 ;
+    skos:prefLabel "Substages"@en,
+        "Substadia"@nl .
+
+substage:00 a skos:Collection ;
+    skos:definition "Registration" ;
+    skos:member iso:00.00,
+        iso:10.00,
+        iso:20.00,
+        iso:30.00,
+        iso:40.00,
+        iso:50.00,
+        iso:60.00 ;
+    skos:prefLabel "Registration"@en,
+        "Registratie"@nl .
+
+substage:20 a skos:Collection ;
+    skos:definition "Start of main action" ;
+    skos:member iso:00.20,
+        iso:10.20,
+        iso:20.20,
+        iso:30.20,
+        iso:40.20,
+        iso:50.20,
+        iso:90.20,
+        iso:95,
+        20 ;
+    skos:prefLabel "Start of main action"@en .
+
+substage:60 a skos:Collection ;
+    skos:definition "Completion of main action" ;
+    skos:member iso:00.60,
+        iso:10.60,
+        iso:20.60,
+        iso:30.60,
+        iso:40.60,
+        iso:50.60,
+        iso:60.60,
+        iso:90:60,
+        iso:95,
+        60 ;
+    skos:prefLabel "Completion of main action"@en .
+
+substage:90 a skos:Collection ;
+    skos:definition "Decision" ;
+    skos:member substage:92,
+        substage:93,
+        substage:98,
+        substage:99 ;
+    skos:prefLabel "Decision"@en,
+        "Besluit"@nl .
+
+substage:92 a skos:Collection ;
+    skos:definition "Repeat an earlier phase" ;
+    skos:member iso:10.92,
+        iso:30.92,
+        iso:40.92,
+        iso:50.92,
+        iso:90.92,
+        iso:95.92 ;
+    skos:prefLabel "Repeat an earlier phase"@en,
+        "Herhaling van een eerdere fase"@nl .
+
+substage:93 a skos:Collection ;
+    skos:definition "Repeat current phase" ;
+    skos:member iso:40.93,
+        iso:90.93 ;
+    skos:prefLabel "Repeat current phase"@en .
+
+substage:98 a skos:Collection ;
+    skos:definition "Abandon" ;
+    skos:member iso:10.98,
+        iso:20.98,
+        iso:30.98,
+        iso:40.98,
+        iso:50.98 ;
+    skos:prefLabel "Abandon"@en .
+
+substage:99 a skos:Collection ;
+    skos:definition "Proceed" ;
+    skos:member iso:10.99,
+        iso:20.99,
+        iso:30.99,
+        iso:40.99,
+        iso:50.99,
+        iso:90.99,
+        iso:95.99 ;
+    skos:prefLabel "Proceed"@en .
+
+### IEC CODES ###
+iec:ACD a skos:Concept ;
+    skos:definition "Approved for CD"@en ;
+    skos:exactMatch iso:20.99 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;	
+    skos:prefLabel "ACD"@en, "ACD"@nl .
+
+iec:ACDV a skos:Concept ;
+    skos:definition "Approved for CDV"@en ;
+    skos:exactMatch iso:30.99 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "ACDV"@en, "ACDV"@nl .
+
+iec:ADTR a skos:Concept ;
+    skos:definition "Approved for DTR"@en ;
+    skos:exactMatch iso:40.99 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "ADTR"@en, "ADTR"@nl .
+
+iec:ADTS a skos:Concept ;
+    skos:definition "Approved for DTS"@en ;
+    skos:exactMatch iso:40.99 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "ADTS"@en, "ADTS"@nl .
+
+iec:AFDIS a skos:Concept ;
+    skos:definition "Approved for FDIS"@en ;
+    skos:exactMatch iso:40.99 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "AFDIS"@en, "AFDIS"@nl .
+
+iec:APUB a skos:Concept ;
+    skos:definition "Approved for publication"@en ;
+    skos:exactMatch iso:50.99 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "APUB"@en, "APUB"@nl .
+
+iec:BPUB a skos:Concept ;
+    skos:definition "Being published"@en ;
+    skos:exactMatch iso:60.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "BPUB"@en, "BPUB"@nl .
+
+iec:CAN a skos:Concept ;
+    skos:definition "Draft Cancelled"@en ;
+    skos:exactMatch iso:30.98,
+        iso:50.98 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CAN"@en, "CAN"@nl .
+
+iec:CCDV a skos:Concept ;
+    skos:definition "Draft circulated as CDV"@en ;
+    skos:exactMatch iso:40.20 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CCDV"@en, "CCDV"@nl .
+
+iec:CD a skos:Concept ;
+    skos:definition "Draft circulated as CD"@en ;
+    skos:exactMatch iso:30.20 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CD"@en, "CD"@nl .
+
+iec:CDISH a skos:Concept ;
+    skos:definition "Draft circulated as DISH"@en ;
+    skos:exactMatch iso:50.20 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CDISH"@en, "CDISH"@nl .
+
+iec:CDM a skos:Concept ;
+    skos:definition "CD to be discussed at meeting"@en ;
+    skos:exactMatch iso:30.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CDM"@en, "CDM"@nl .
+
+iec:CDPAS a skos:Concept ;
+    skos:definition "Draft circulated as DPAS"@en ;
+    skos:exactMatch iso:50.20 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CDPAS"@en, "CDPAS"@nl .
+
+iec:CDTR a skos:Concept ;
+    skos:definition "Draft circulated as DTR"@en ;
+    skos:exactMatch iso:50.20 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CDTR"@en, "CDTR"@nl .
+
+iec:CDTS a skos:Concept ;
+    skos:definition "Draft circulated as DTS"@en ;
+    skos:exactMatch iso:50.20 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CDTS"@en, "CDTS"@nl .
+
+iec:CDVM a skos:Concept ;
+    skos:definition "Rejected CDV to be discussed at meeting"@en ;
+    skos:exactMatch iso:40.91 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CDVM"@en, "CDVM"@nl .
+
+iec:CFDIS a skos:Concept ;
+    skos:definition "Draft circulated as FDIS"@en ;
+    skos:exactMatch iso:50.20 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "CFDIS"@en, "CFDIS"@nl .
+
+iec:DECDISH a skos:Concept ;
+    skos:definition "DISH at editing check"@en ;
+    skos:exactMatch iso:50.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "DECDISH"@en, "DECDISH"@nl .
+
+iec:DECFDIS a skos:Concept ;
+    skos:definition "FDIS at editing check"@en ;
+    skos:exactMatch iso:50.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "DECFDIS"@en, "DECFDIS"@nl .
+
+iec:DECPUB a skos:Concept ;
+    skos:definition "Publication at editing check"@en ;
+    skos:exactMatch iso:60.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "DECPUB"@en, "DECPUB"@nl .
+
+iec:DEL a skos:Concept ;
+    skos:definition "Deleted/abandoned"@en ;
+    skos:exactMatch iso:10.98,
+        iso:20.98 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "DEL"@en, "DEL"@nl .
+
+iec:DELPUB a skos:Concept ;
+    skos:definition "Deleted publication"@en ;
+    skos:exactMatch iso:99.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "DELPUB"@en, "DELPUB"@nl .
+
+iec:DTRM a skos:Concept ;
+    skos:definition "Rejected DTR to be discussed at meeting"@en ;
+    skos:exactMatch iso:50.92 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "DTRM"@en, "DTRM"@nl .
+
+iec:DTSM a skos:Concept ;
+    skos:definition "Rejected DTS to be discussed at meeting"@en ;
+    skos:exactMatch iso:50.92 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "DTSM"@en, "DTSM"@nl .
+
+iec:MERGED a skos:Concept ;
+    skos:definition "Fragment merged"@en ;
+    skos:exactMatch iso:30.97 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "MERGED"@en, "MERGED"@nl .
+
+iec:NCDV a skos:Concept ;
+    skos:definition "CDV rejected"@en ;
+    skos:exactMatch iso:40.91 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "NCDV"@en, "NCDV"@nl .
+
+iec:NDTR a skos:Concept ;
+    skos:definition "DTR rejected"@en ;
+    skos:exactMatch iso:50.92 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "NDTR"@en, "NDTR"@nl .
+
+iec:NDTS a skos:Concept ;
+    skos:definition "DTS rejected"@en ;
+    skos:exactMatch iso:50.92 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "NDTS"@en, "NDTS"@nl .
+
+iec:NFDIS a skos:Concept ;
+    skos:definition "FDIS rejected"@en ;
+    skos:exactMatch iso:50.92 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "NFDIS"@en, "NFDIS"@nl .
+
+iec:PCC a skos:Concept ;
+    skos:definition "Preparation of CC"@en ;
+    skos:exactMatch iso:30.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PCC"@en, "PCC"@nl .
+
+iec:PNW a skos:Concept ;
+    skos:definition "New work item proposal"@en ;
+    skos:exactMatch iso:10.20 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PNW"@en, "PNW"@nl .
+
+iec:PPUB a skos:Concept ;
+    skos:definition "Publication issued"@en ;
+    skos:exactMatch iso:60.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PPUB"@en, "PPUB"@nl .
+
+iec:PRVC a skos:Concept ;
+    skos:definition "Preparation of RVC"@en ;
+    skos:exactMatch iso:40.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PRVC"@en, "PRVC"@nl .
+
+iec:PRVD a skos:Concept ;
+    skos:definition "Preparation of RVD"@en ;
+    skos:exactMatch iso:50.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PRVD"@en, "PRVD"@nl .
+
+iec:PRVDISH a skos:Concept ;
+    skos:definition "Preparation of RVDISH"@en ;
+    skos:exactMatch iso:50.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PRVDISH"@en, "PRVDISH"@nl .
+
+iec:PRVDPAS a skos:Concept ;
+    skos:definition "Preparation of RVDPAS"@en ;
+    skos:exactMatch iso:50.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PRVDPAS"@en, "PRVDPAS"@nl .
+
+iec:PRVDTR a skos:Concept ;
+    skos:definition "Preparation of RVDTR"@en ;
+    skos:exactMatch iso:50.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PRVDTR"@en, "PRVDTR"@nl .
+
+iec:PRVDTS a skos:Concept ;
+    skos:definition "Preparation of RVDTS"@en ;
+    skos:exactMatch iso:50.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PRVDTS"@en, "PRVDTS"@nl .
+
+iec:PRVN a skos:Concept ;
+    skos:definition "Preparation of RVN"@en ;
+    skos:exactMatch iso:10.60 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PRVN"@en, "PRVN"@nl .
+
+iec:PWI a skos:Concept ;
+    skos:definition "Preliminary work item"@en ;
+    skos:exactMatch iso:00.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "PWI"@en, "PWI"@nl .
+
+iec:RDISH a skos:Concept ;
+    skos:definition "DISH received and registered"@en ;
+    skos:exactMatch iso:50.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "RDISH"@en, "RDISH"@nl .
+
+iec:RFDIS a skos:Concept ;
+    skos:definition "FDIS received and registered"@en ;
+    skos:exactMatch iso:50.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "RFDIS"@en, "RFDIS"@nl .
+
+iec:RPUB a skos:Concept ;
+    skos:definition "Publication received and registered"@en ;
+    skos:exactMatch iso:60.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "RPUB"@en, "RPUB"@nl .
+
+iec:SPLIT a skos:Concept ;
+    skos:definition "Project Fragmented"@en ;
+    skos:exactMatch iso:30.96 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "SPLIT"@en, "SPLIT"@nl .
+
+iec:TCDV a skos:Concept ;
+    skos:definition "Translation of CDV"@en ;
+    skos:exactMatch iso:40.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "TCDV"@en, "TCDV"@nl .
+
+iec:TDISH a skos:Concept ;
+    skos:definition "Translation of DISH"@en ;
+    skos:exactMatch iso:50.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "TDISH"@en, "TDISH"@nl .
+
+iec:TDTR a skos:Concept ;
+    skos:definition "Translation of DTR"@en ;
+    skos:exactMatch iso:50.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "TDTR"@en, "TDTR"@nl .
+
+iec:TDTS a skos:Concept ;
+    skos:definition "Translation of DTS"@en ;
+    skos:exactMatch iso:50.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "TDTS"@en, "TDTS"@nl .
+
+iec:TPUB a skos:Concept ;
+    skos:definition "Translation of publication"@en ;
+    skos:exactMatch iso:60.00 ;
+    skos:inScheme <http://data.nen.nl/isc/schemes/iec> ;
+    skos:prefLabel "TPUB"@en, "TPUB"@nl .
+	
+<http://data.nen.nl/isc/schemes/iso> a skos:ConceptScheme ;
+    rdfs:label "Harmonized Stage Codes" ;
+    dc11:creator "International Organization for Standardization"@en,
+        "Internationale Organisatie voor Standaardisatie"@nl ;
+    dc11:title "International Harmonized Stage Codes"@en ;
+    rdfs:seeAlso <https://www.iso.org/stage-codes.html> ;
+    skos:hasTopConcept iso:00,
+        iso:10,
+        iso:20,
+        iso:30,
+        iso:40,
+        iso:50,
+        iso:60,
+        iso:90,
+        iso:95 .
+
+<http://data.nen.nl/isc/schemes/iec> a skos:ConceptScheme ;
+    rdfs:label "Standards development stages" ;
+    dc11:creator "International Electrotechnical Commission"@en ;
+    dc11:title "Standards development stages - IEC"@en ;
+    rdfs:seeAlso <https://www.iec.ch/standards-development/stage-codes> ;
+    skos:hasTopConcept iec:ACD, 
+		iec:ACDV, 
+		iec:ADTR, 
+		iec:ADTS, 
+		iec:AFDIS, 
+		iec:APUB,
+		iec:BPUB,
+		iec:CAN,
+		iec:CCDV,
+		iec:CD,
+		iec:CDISH,
+		iec:CDM,
+		iec:CDPAS,
+		iec:CDTR,
+		iec:CDTS,
+		iec:CDVM,
+		iec:CFDIS,
+		iec:DECDISH,
+		iec:DECFDIS,
+		iec:DECPUB,
+		iec:DEL,
+		iec:DELPUB,
+		iec:DTRM,
+		iec:DTSM,
+		iec:MERGED,
+		iec:NCDV,
+		iec:NDTR,
+		iec:NDTS,
+		iec:NFDIS,
+		iec:PCC,
+		iec:PNW,
+		iec:PPUB,
+		iec:PRVC,
+		iec:PRVD,
+		iec:PRVDISH,
+		iec:PRVDPAS,
+		iec:PRVDTR,
+		iec:PRVDTS,
+		iec:PRVN,
+		iec:PWI,
+		iec:RDISH,
+		iec:RFDIS,
+		iec:RPUB,
+		iec:SPLIT,
+		iec:TCDV,
+		iec:TDISH,
+		iec:TDTR,
+		iec:TDTS,
+		iec:TPUB .
